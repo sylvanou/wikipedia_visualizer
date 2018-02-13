@@ -37,6 +37,9 @@ let ajaxsearch = ()=>{
 
 
 searchButton.addEventListener('click', ajaxsearch)
+searchButton.addEventListener('keydown', function(e) {
+    console.log(e);
+})
 randomButton.addEventListener('click', function(){
     window.open(`${wiki_link}${randomEndpoint}`)
 })
