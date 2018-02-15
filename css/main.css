@@ -1,18 +1,25 @@
 body {
-    margin-top: 2vh;
     text-align: center;
-    background-color: #3b5998;
-    color: #fff;
+    margin-top: 2vh;
+    background: url('../img/library.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+
+.searchContainer {
+    align-items: center;
+    margin-top: 50px;
+}
 h1 {
+    text-align: center;
     width: 300px;
     margin: 0 auto;
     margin-bottom: 10px;
-    border: 3px solid #fff;
+    border: 3px solid black;
     border-radius: 30px;
-    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .5);
-    background-color: royalblue;
+    box-shadow:0 9px 4px -5px rgba(0, 0, 0, .5);    
+    background-color: #fff;
 }
 .imageContainer img {
     border: 1px solid black;
@@ -25,18 +32,24 @@ h1 {
     font-size: 1.4rem;
     text-align: center;
     font-family: "Open Sans";
-    border: 3px solid royalblue;
+    border: 3px solid black;
     border-radius: 30px;
     display: block;
     margin: 0 auto;
     padding: 5px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
+    box-shadow:0 9px 4px -5px rgba(0, 0, 0, .5);    
     background-color: #fff;
     transition: all .3s;
 }
 
 
+input:focus {
+    outline: none;
+}
+
 button {
+    border: 1px solid black;
+    margin-left: auto;
     margin-top: 20px;
     text-decoration: none;
     color: white;
@@ -46,17 +59,25 @@ button {
     text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: royalblue;
+    background-color: black;
     box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .5);
     transition: all .3s;
     position: relative;
+    transition: transform 150ms;
+}
+
+button:hover {
     cursor: pointer;
+    border: 1px solid black;
+    background-color: #000;/*#566270;*/
+    color: #EFFFE9;
+    transform: scale(1.09);
 }
 
 li {
+    box-shadow: 2px 3px 1px #333;
     margin: 0 auto;
     background-color: #f7f7f7;
-    border-radius: 25px;
     border: 2px solid black;
     margin: 2vh;
     list-style-type: none;
@@ -67,11 +88,12 @@ li {
 }
 
 a {
+    text-align: center;
     color: black;
     font-weight: bold;
 }
 
 a:hover {
-    color: royalblue;
+    color: blue;
     font-weight: bold;
 }
